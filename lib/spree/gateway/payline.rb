@@ -5,8 +5,10 @@ module Spree
       preference :merchant_access_key, :string
       preference :contract_number, :string
       
+      attr_accessible :preferred_merchant_id, :preferred_merchant_access_key, :preferred_contract_number
+      
       def provider_class
-        ActiveMerchant::Billing::Payline
+        ActiveMerchant::Billing::PaylineGateway
       end
     end
   end
