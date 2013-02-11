@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   
   gem.add_dependency 'spree_core', '~> 1.2.0'
-  gem.add_dependency 'activemerchant-payline', '~> 0.0.1'
+  gem.add_dependency 'activemerchant-payline', '~> 0.0.1.alpha1'
 end
